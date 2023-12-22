@@ -1,0 +1,249 @@
+#root {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  padding: 2rem;
+  /* text-align: center; */
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.container {
+  text-align: center;
+}
+
+/* Vending.css */
+.Vending {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.Vending > h1 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.Vending > button {
+  margin: 0 auto;
+}
+
+/* Products.css */
+.Products {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  background-color: #555;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.product-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.product-details {
+  flex-grow: 1;
+}
+
+.product-details strong {
+  font-size: 18px;
+  color: #fff;
+}
+
+.product-details span {
+  font-size: 14px;
+  color: #ddd;
+}
+
+.product-buy-btn {
+  margin-right: 5px;
+}
+
+.product-buy-btn,
+.product-del-btn,
+.add-product-btn {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.product-buy-btn:hover,
+.product-del-btn:hover,
+.add-product-btn:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.product-details > strong {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-product-form input {
+  margin-bottom: 10px;
+}
+
+/* CoinInsert.css */
+.CoinInsert {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.CoinInsert > p {
+  margin-bottom: 10px;
+}
+
+.denomination-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.denomination-list li {
+  background-color: #4caf50;
+  color: #fff;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin: 5px auto;
+  width: 40%;
+  text-align: center;
+  justify-content: center;
+}
+
+input {
+  padding: 10px;
+  margin-right: 10px;
+  width: 40%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.total-reset-btn {
+  margin-left: 6px;
+}
+
+.CoinInsert > button,
+.Vending > button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 12px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.CoinInsert > button:hover,
+.Vending > button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Change.css */
+.Change {
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.change-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  #root {
+    padding: 0;
+    position: relative;
+  }
+
+  .Vending {
+    width: 100%;
+    padding: 0;
+  }
+
+  .Vending > h1 {
+    margin-top: 0;
+  }
+
+  .CoinInsert {
+    width: 100%;
+  }
+
+  .CoinInsert > input {
+    width: 90%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .Vending > button {
+    margin-bottom: 20px;
+  }
+
+  .Products ul {
+    padding: 0 10px;
+  }
+
+  .new-product-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+  }
+
+  .new-product-form input {
+    width: 90%;
+    margin: 5px auto;
+  }
+}
